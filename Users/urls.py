@@ -1,8 +1,8 @@
-from django.contrib import admin, include
-from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
 
 from Users import views
 
 urlpatterns = [
-    path('register/', views.view_register),
+    path('register/', views.Register.as_view()),
 ]
