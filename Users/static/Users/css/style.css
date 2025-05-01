@@ -4,11 +4,24 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, label, p, span{
+h1, h2, h3, label, p, span, li{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+
+    color: #fff;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 32px;
+
+    color: #eeba2c;
+}
+
+label, p, span, li{
+    font-weight: 400;
 }
 
 body{
@@ -23,7 +36,8 @@ body{
 }
 
 main{
-    width: 70vw;
+    width: 30vw;
+    min-width: 500px;
     height: 80vh;
 
     border-radius: 20px;
@@ -40,4 +54,61 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+form{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+
+    width: 80%;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 1% 0px;
+}
+
+label{
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.help-text{
+    margin: 5px 0px;
+    font-size: 10px;
+}
+
+.errorlist li{
+    margin: 5px 0px;
+    font-size: 10px;
+    color: rgb(206, 79, 79);
+}
+
+input{
+    border-radius: 50px;
+    height: 30px;
+    padding: 0px 10px
+}
+
+button{
+    height: 60px;
+
+    border-radius: 50px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    background-color: #eeba2c;
+    color: #161616;
+
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.02);
+    background-color: #f0cb65;
 }
